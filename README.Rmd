@@ -111,7 +111,7 @@ Similarly, we could look at how the voting record of the United States has chang
 
 ```{r issue_plot, dependson = "joined", fig.height = 6, fig.width = 6}
 joined %>%
-  filter(country == "United States of America") %>%
+  filter(country == "United States") %>%
   inner_join(un_roll_call_issues, by = "rcid") %>%
   group_by(year = year(date), issue) %>%
   summarize(votes = n(),

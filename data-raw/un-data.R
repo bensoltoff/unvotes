@@ -7,7 +7,7 @@ library(usethis)
 
 vlevels <- c("yes", "abstain", "no")
 
-load("data-raw/UNVotes2021.RData")
+load("data-raw/UNVotes2024.RData")
 
 un_votes <- completeVotes %>%
   filter(vote <= 3) %>%
